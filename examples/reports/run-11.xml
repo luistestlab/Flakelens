@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuites>
+  <testsuite name="ci-run-11">
+    <testcase classname="tests.test_auth" name="test_login_with_valid_credentials" time="1.452" />
+    <testcase classname="tests.test_auth" name="test_login_rejects_wrong_password" time="1.672" />
+    <testcase classname="tests.test_cart" name="test_add_item" time="0.832" />
+    <testcase classname="tests.test_cart" name="test_remove_item" time="2.624" />
+    <testcase classname="tests.test_search" name="test_search_by_product_name" time="1.298" />
+    <testcase classname="tests.test_profile" name="test_update_shipping_address" time="0.675" />
+    <testcase classname="tests.test_checkout" name="test_payment_gateway_timeout" time="2.203" />
+    <testcase classname="tests.test_notifications" name="test_websocket_receives_order_update" time="0.970">
+      <failure message="AssertionError: expected 1 message, got 0">Traceback (most recent call last):
+  ...
+AssertionError: expected 1 message, got 0</failure>
+    </testcase>
+    <testcase classname="tests.test_search" name="test_autocomplete_suggestions" time="1.967" />
+    <testcase classname="tests.test_promotions" name="test_expired_coupon_is_rejected" time="1.342">
+      <failure message="AssertionError: expected HTTP 400, got 200">Traceback (most recent call last):
+  ...
+AssertionError: expected HTTP 400, got 200</failure>
+    </testcase>
+    <testcase classname="tests.test_legacy" name="test_export_to_xls" time="1.577">
+      <skipped message="legacy export disabled" />
+    </testcase>
+  </testsuite>
+</testsuites>

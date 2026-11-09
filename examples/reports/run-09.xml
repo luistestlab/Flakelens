@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuites>
+  <testsuite name="ci-run-09">
+    <testcase classname="tests.test_auth" name="test_login_with_valid_credentials" time="1.527" />
+    <testcase classname="tests.test_auth" name="test_login_rejects_wrong_password" time="0.577" />
+    <testcase classname="tests.test_cart" name="test_add_item" time="2.742" />
+    <testcase classname="tests.test_cart" name="test_remove_item" time="2.618" />
+    <testcase classname="tests.test_search" name="test_search_by_product_name" time="0.930" />
+    <testcase classname="tests.test_profile" name="test_update_shipping_address" time="1.935" />
+    <testcase classname="tests.test_checkout" name="test_payment_gateway_timeout" time="0.501" />
+    <testcase classname="tests.test_notifications" name="test_websocket_receives_order_update" time="1.641" />
+    <testcase classname="tests.test_search" name="test_autocomplete_suggestions" time="1.615" />
+    <testcase classname="tests.test_promotions" name="test_expired_coupon_is_rejected" time="0.052">
+      <failure message="AssertionError: expected HTTP 400, got 200">Traceback (most recent call last):
+  ...
+AssertionError: expected HTTP 400, got 200</failure>
+    </testcase>
+    <testcase classname="tests.test_legacy" name="test_export_to_xls" time="1.006">
+      <skipped message="legacy export disabled" />
+    </testcase>
+  </testsuite>
+</testsuites>

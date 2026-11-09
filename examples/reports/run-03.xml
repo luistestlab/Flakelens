@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuites>
+  <testsuite name="ci-run-03">
+    <testcase classname="tests.test_auth" name="test_login_with_valid_credentials" time="2.550" />
+    <testcase classname="tests.test_auth" name="test_login_rejects_wrong_password" time="1.831" />
+    <testcase classname="tests.test_cart" name="test_add_item" time="2.431" />
+    <testcase classname="tests.test_cart" name="test_remove_item" time="2.203" />
+    <testcase classname="tests.test_search" name="test_search_by_product_name" time="1.632" />
+    <testcase classname="tests.test_profile" name="test_update_shipping_address" time="2.921" />
+    <testcase classname="tests.test_checkout" name="test_payment_gateway_timeout" time="1.679" />
+    <testcase classname="tests.test_notifications" name="test_websocket_receives_order_update" time="1.875" />
+    <testcase classname="tests.test_search" name="test_autocomplete_suggestions" time="1.753" />
+    <testcase classname="tests.test_promotions" name="test_expired_coupon_is_rejected" time="2.128" />
+    <testcase classname="tests.test_legacy" name="test_export_to_xls" time="0.185">
+      <skipped message="legacy export disabled" />
+    </testcase>
+  </testsuite>
+</testsuites>

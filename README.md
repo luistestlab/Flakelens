@@ -1,5 +1,9 @@
 # flakelens
 
+[![CI](https://github.com/luistestlab/Flakelens/actions/workflows/ci.yml/badge.svg)](https://github.com/luistestlab/Flakelens/actions/workflows/ci.yml)
+![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue)
+![License: MIT](https://img.shields.io/badge/license-MIT-green)
+
 **Find the flaky tests in your suite before they erode trust in your CI.**
 
 A flaky test is one that passes and fails on the same code. Every team has
@@ -43,8 +47,8 @@ BROKEN  9%    42%   5/12         tests.test_promotions::test_expired_coupon_is_r
 Requires Python 3.10+.
 
 ```bash
-git clone https://github.com/<your-user>/flakelens.git
-cd flakelens
+git clone https://github.com/luistestlab/Flakelens.git
+cd Flakelens
 python -m venv .venv
 # Windows: .venv\Scripts\activate    macOS/Linux: source .venv/bin/activate
 pip install -e ".[dev]"

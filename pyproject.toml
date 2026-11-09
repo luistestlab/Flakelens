@@ -9,7 +9,7 @@ description = "Find flaky tests by analyzing the history of your JUnit XML test 
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
-authors = [{ name = "Luis" }]
+authors = [{ name = "Luis Eduardo" }]
 keywords = ["testing", "flaky-tests", "junit", "qa", "ci"]
 dependencies = []
 
